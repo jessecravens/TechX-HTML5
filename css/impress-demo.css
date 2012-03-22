@@ -494,3 +494,38 @@ body     { pointer-events: none; }
     display: block;
 }
 
+
+
+
+/*project styles */
+
+
+.textAttr {
+    text-align: right;
+    }
+    
+.listTable td {
+    padding: 0px 20px;}
+    
+#family .scalling {
+    font-size: .5em;
+    }
+    
+#family .exagerate {
+    font-size: 4.5em;
+}
+    
+ .holder { width: 100%; padding-bottom: 200px;}
+ 
+ .split {float: left; width: 48%;}
+ 
+ #tiny p { white-space: nowrap; margin-left: -100px;}
+ 
+ #tiny .emph { color: red}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
