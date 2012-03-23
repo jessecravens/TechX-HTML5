@@ -524,8 +524,55 @@ body     { pointer-events: none; }
  #tiny .emph { color: red}
  
  
+ .compatabilityTable td {
+     font-size: .5em;   
+     }
+     
+     
+
+     
  
- 
- 
- 
+  .compatabilityTable tr:nth-child(1) td{
+      padding: 30px 25px;
+     background-image: url(../img/compatible_opera.gif);
+     background-repeat: no-repeat;
+     background-position: center 0px;
+     text-align: center;
+     width:50px;
+     xborder: 1px solid red;
+
+     
+     }
+     
+     .compatabilityTable tr:nth-child(1) td:nth-child(2){
+         background-image: url(../img/compatible_ie.gif);
+     }
+     .compatabilityTable tr:nth-child(1) td:nth-child(3){
+         background-image: url(../img/compatible_safari.gif);
+     }
+     .compatabilityTable tr:nth-child(1) td:nth-child(4){
+         background-image: url(../img/compatible_chrome.gif);
+     }
+          .compatabilityTable tr:nth-child(1) td:nth-child(5){
+         background-image: url(../img/compatible_firefox.gif);
+     }
+          .compatabilityTable tr:nth-child(1) td:nth-child(6){
+         background-image: url(../img/compatible_android.gif);
+     }
+          .compatabilityTable tr:nth-child(1) td:nth-child(7){
+         background-image: url(../img/compatible_ios.gif);
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
  
