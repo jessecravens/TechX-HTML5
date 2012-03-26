@@ -523,6 +523,9 @@ body     { pointer-events: none; }
  
  #tiny .emph { color: red}
  
+ .discription {
+     font-size: .8em;
+     }
  
  .compatabilityTable td {
      font-size: .5em;   
