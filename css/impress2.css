@@ -361,8 +361,10 @@ div.abs-box > :not(.base) {
  
   .compatabilityTable {
       
-      background: rgba(235, 221, 221, 0.4);
+      background: rgba(245, 250, 249, 0.9);
+      padding: 15px;
       -webkit-border-radius: 4px;
+      color: #121112;
       }
  
  
