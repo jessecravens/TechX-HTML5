@@ -665,37 +665,367 @@
     
     
     
-    
-    
-    
-    
-    
-       <!--
-        JESSE
-    -->
+	<!-- ----------------------------------------------------------------------------------------------------------------------------
+	    JESSE
+	-->
+	
+	<!-- ----------------------------------------------------------------------------------------------------------------------------
+	    WEB WORKERS, CANVAS
+	-->
+	
+	<div id="ing3" class="step" data-x="6500" data-y="-850" data-rotate="270" data-scale="3">
+	    <p><b class="positioning">Web Workers,</b></p>
+		<p>and Canvas</p>
+	</div>
 
-    
-<!-- <<<<<<< HEAD  -->
+	<div id="demo3Compat" class="step" data-x="7500" data-y="-850" data-rotate="270" data-scale="2">
+	  <ul class="compatabilityList">
+	    <li>Web Workers API
+	            <table class="compatabilityTable">
+	               <tr>
+	                    <td>10.6+</td> <!-- Opera -->
+	                    <td>10+</td>  <!-- IE -->
+	                    <td>4+</td>  <!-- Safari -->
+	                    <td>4+</td>  <!-- Chrome -->
+	                    <td>3.5+</td> <!-- Firefox -->
+	                    <td>2.1 (?)</td> <!-- Android -->
+	                    <td>5+</td> <!-- iOS -->
+	               </tr>
+	            </table>
+	    </li>
+	    <li>Canvas
+	            <table class="compatabilityTable">
+	               <tr>
+	                   <td>9+</td> <!-- Opera -->
+	                   <td>9+</td>  <!-- IE -->
+	                   <td>3.1+</td>  <!-- Safari -->
+	                   <td>4+</td>  <!-- Chrome -->
+	                   <td>2+</td> <!-- Firefox -->
+	                   <td>2.1+</td> <!-- Android -->
+	                   <td>3.2+</td> <!-- iOS -->
+	               </tr>
+	            </table>
+	    </li>
+	   </ul>        
+	</div>
 
+
+    <div id="workers-what" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+	    <h3>Web Workers API</h3>
+        <p>Web Workers provide a <b>simple</b> means for web content to run scripts in <b>background threads</b>.</p>
+    </div>
+
+    <div id="workers-what2" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+		<p>Once created, a worker can send messages to the spawning task by posting messages to an event handler specified by the creator.</p>
+    </div>
+
+    <div id="workers-why" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+	    <h3>Why Web Workers?</h3>
+		<p>JavaScript codebases <b>continue</b> to grow.</p>
+		<p>As more JavaScript runs, the more applications block ... waiting for code to finish.</p>
+    </div>
+
+    <div id="workers-why2" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+        <h3>How do we create and keep our existing applications responsive and high performing?</h3>
+    </div>
+
+    <div id="workers-why3" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+        <h3><b>And</b>, how do we design HTML5 applications frameworks for the future?</h3>
+    </div>
+
+    <div id="workers-why3" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+		<h3><b>And</b>, how do we prevent this?</h3>
+    </div>
+
+     <!-- <div id="unresponsive-ie" class="step prompt" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="img-rounded">
+            <img src="img/workers/ie.gif" width="377" height="165" alt="Ie">
+        </div>
+		<p>default limit: 5M statements</p>
+		<p>settings: registry(HKEY_CURRENT_USERS) MaxScriptStaments</p>
+    </div>
+
+     <div id="unresponsive-chrome" class="step prompt" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="img-rounded">
+            <img src="img/workers/chrome.jpg" width="454" height="232" alt="Chrome">
+        </div>
+		<p>default limit: none - generic crash detection system</p>
+		<p>settings: none</p>
+    </div>
+
+     <div id="unresponsive-safari" class="step prompt" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="img-rounded">
+            <img src="img/workers/safari.png" width="500" height="276" alt="Safari">
+        </div>
+		<p>default limit: 5 seconds</p>
+		<p>settings: Developer Disable Runaway JavaScript Timer</p>
+    </div> -->
+
+     <div id="unresponsive-firefox" class="step prompt" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="img-rounded">
+            <img src="img/workers/firefox.jpg" width="617" height="213" alt="Firefox">
+        </div>
+		<!-- <p>default limit: 10 seconds</p>
+		<p>settings: about:config dom.max_script_run_time</p> -->
+    </div>
+
+    <div id="workers-single" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+		<h3>How are events handled in the browser?</h3>
+		<!-- <p>Is it really a <b>Single</b> thread?</p> -->
+		<!-- <p>JavaScript runs code from an event loop that takes events off a queue of all the events that have occurred in the browser.</p>
+		<p>When the interpreter becomes idle it takes the first event off the queue and runs its handler.</p>
+		<p>As long as it runs quickly the UI remains responsive (50ms).</p> -->
+
+		<img src="img/workers/workers1.png" class="img-rounded" width="427" height="390" alt="Workers1">
+    </div>
+
+    <div id="workers-usescases" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+		<h3>So, what can create unresponsiveness in the browser?</h3>
+
+	      <ul>
+		      <li><b>Processing large arrays or JSON responses</b></li>
+		      <li><b>Artificial Intelligence Libraries</b></li>
+		      <li>Prefetching and/or caching data for later use</li>
+		      <li>Real-time text formatting</li>
+			  <li>Spell checker</li>
+			  <li>Analyzing video or audio data</li>
+			  <li>Background I/O or polling of webservices</li>
+			  <li>Image filtering in canvas</li>
+			  <li>Updating many rows of a local web database</li>
+          </ul>
+    </div>
+
+    <div id="workers-usescases2" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+		<h3>So, these are good candidates for Web Workers.</h3>
+    </div>
+
+    <div id="workers-communication" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+
+        <h3>But, How do Web Workers help?</h3>
+        <!-- <div class="holder" >
+	      <p>	Web worker runs in the background to your main window. Or in parallel. 
+
+	      			It is data-driven. Send data, does computations, and then sends it back to the main window....where it then can be appended to the DOM. 
+
+	      			Object that gets sent is copied not referenced.</p>
+    	</div> -->
+		<img src="img/workers/workers2.png" class="img-rounded" width="257" height="420" alt="Workers2">
+    </div>
+
+    <div id="workers-highComp" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+        <h3>First, we need to manufacture an <b>expensive</b> computation.</h3>
+    </div>
+
+     <div id="demo3code-1" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=highComp-simple.js"></script>     
+        </div>
+    </div>
+
+    <div id="demo3-canvas-balls" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+
+        <h3><b>Canvas Bouncing Balls Demo</b></h3>
+        <h3>Let's Run It.</h3>
+    </div>
+
+    <div id="workers-highComp2" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+        <h3>Well, as we can see that's kind of a <b>Bad Idea</b> in our main thread.</h3>
+    </div>
+
+    <div id="workers-highComp" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+        <h3>Shall we try a <b>Web Worker</b> instead?</h3>
+    </div>
+
+     <div id="demo3code-2" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=spawn.js"></script>     
+        </div>
+    </div>
+     <div id="demo3code-3" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=worker.js"></script>     
+        </div>
+    </div>
+
+	<div id="demo3-canvas-balls2" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+
+        <h3><b>Canvas Bouncing Balls Demo</b></h3>
+        <h3>Let's Run It... with a worker</h3>
+    </div>
+
+    <div id="workers-api-pattern" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+         <h3>Ewww... but that <b>code smells</b>, let's refactor it a bit.</h3>
+    </div>
+
+     <div id="demo3code-4" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=computations-library-spawn.js"></script>    
+        </div>
+    </div>
+
+     <div id="demo3code-5" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=computations-library.js"></script>    
+        </div>
+    </div>
+
+    <div id="workers-ai-overview" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+         <h3>So, how does this apply to <b>HTML5 Application</b> development?</h3>
+         <h3>Any need for <b>Artificial Intelligence</b>?</h3>
+    </div>
+
+    <div id="workers-ai-overview2" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+        <h3>Let's introduce one new concept,</h3>
+		<p>... using timers to chunk up the work. Let me explain.</p>
+    </div>
+
+
+    <div id="demo3-ai" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+         <h3>Mass Panic Demo</h3>
+		   <ul>
+			  <li>Spawn Worker and add EventListeners</li>
+		      <li>Generate <b>DOM Movement</b> (Characters)</li>
+         </ul>
+    </div>
+
+     <div id="demo3code-7" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=ai-library-spawn.js"></script>    
+        </div>
+    </div>
+
+     <div id="demo3code-8" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=ai-library-init.js"></script>    
+        </div>
+    </div>
+
+    <div id="demo3-ai2" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+         <h3>Let's Run It.</h3>
+    </div>
+
+    <div id="demo3-ai3" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+         <h3>Mass Panic Demo</h3>
+		   <ul>
+			  <li>Kick off <b>Snapshot</b> Timers</li>
+		      <li>At each interval, send <b>Snapshot</b> to Worker (AI Library)</li>
+         </ul>
+    </div>
+
+     <div id="demo3code-9" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=ai-library-timers.js"></script>    
+        </div>
+    </div>
+
+    <div id="demo3-ai4" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+         <h3>Mass Panic Demo</h3>
+		   <ul>
+			  <li>Do <b>Heavy Processing</b> in Worker (AI Library)</li>
+			  <li>Pass Back <b>Updates</b> to Main Thread</li>
+         </ul>
+    </div>
+
+     <div id="demo3code-10" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=ai-library.js"></script>    
+        </div>
+    </div>
+
+    <div id="demo3-ai5" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+         <h3>Mass Panic Demo</h3>
+		   <ul>
+			  <li>Make Updates to DOM Elements</li>
+         </ul>
+    </div>
+
+     <div id="demo3code-11" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=ai-library-spawn.js"></script>    
+        </div>
+    </div>
+
+    <div id="demo3-ai6" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+         <h3>Let's Run It.</h3>
+    </div>
+
+    <div id="ai-usescases" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+		<h3>So...this is a silly little game.</h3>
+		<h3>Before Workers this wasn't really possible.</h3>
+		
+		<p>Snapshots of the DOM ------------> background thread.</p>
+		<p>Perform heavy processing, with no impact to the UX.</p>
+    </div>
+
+    <div id="ai-usescases2" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+	
+		<h3>Potential</h3>
+		   <ul>
+		      <li>Offline Analytics</li>
+		      <li>CoBrowse, Shadow type Solutions</li>
+		      <li>Client Side Image Processing</li>
+			  <li>Background XMLHTTPRequests</li>
+			  <li>Background R/W to Local Storage</li>
+			  <li><b>Combination of Any of the Above ... and more.</b></li>
+          </ul>
+    </div>
+
+	<!-- ----------------------------------------------------------------------------------------------------------------------------
+	    WEB SOCKETS
+	-->
+
+	<div id="ing4" class="step" data-x="8500" data-y="-850" data-rotate="270" data-scale="3">
+		<p><b class="positioning">Web Sockets,</b></p> 
+		<p>WebGL, and Sencha 2.0 Mobile</p>
+	</div>   
+
+	<div id="demo4Compat" class="step" data-x="9500" data-y="-850" data-rotate="270" data-scale="2">
+	  <ul class="compatabilityList">
+	    <li>Web Sockets API
+	            <table class="compatabilityTable">
+	               <tr>
+	                   <td>11(p)+</td> <!-- Opera -->
+	                   <td>10+</td>  <!-- IE -->
+	                   <td>5(p)+</td>  <!-- Safari -->
+	                   <td>14+</td>  <!-- Chrome -->
+	                   <td>6+</td> <!-- Firefox -->
+	                   <td>~</td> <!-- Android -->
+	                   <td>4.2(p)+</td> <!-- iOS -->
+	               </tr>
+	            </table>
+	    </li>
+	    <li>WebGL
+	            <table class="compatabilityTable">
+	               <tr>
+
+	               </tr>
+	            </table>
+	    </li>
+	   </ul>  
+	</div>
+
+	<div id="sockets-vid-demo1" class="step" data-x="8500" data-y="-850" data-rotate="270" data-scale="3">
+		<!-- <object width="640" height="360"><param name="movie" value="http://www.youtube.com/v/3al8prbfK5o&hl=en_US&feature=player_embedded&version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.youtube.com/v/3al8prbfK5o&hl=en_US&feature=player_embedded&version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="360"></embed>
+		</object> -->
+	</div>
+
+
+  	<!-- ----------------------------------------------------------------------------------------------------------------------------
+	    END WEB WORKERS
+	-->
+    
+ 
+    <!-- ----------------------------------------------------------------------------------------------------------------------------
+	    SOCKETS
+	-->
 
     <div id="ing2" class="step" data-x="7500" data-y="-2850" data-rotate="270" data-scale="3">
         <p>Web Worker API,  <b class="positioning">Web Sockets API </b>, <b class="rotating">GeoLocation, </b> and <b class="scaling"> WebGL</b></p>
     </div>   
-<!--  >>>>>>> c01fca8139b424e63be8d9ec435480445d660896  -->
-   
-   
-   
-   
-   
-   
-    
-    <div id="demo3Compat" class="step" data-x="6000" data-y="-2850" data-rotate="270" data-scale="2">
-        
-        
+
+    <div id="demo4Compat" class="step" data-x="6000" data-y="-2850" data-rotate="270" data-scale="2">        
       <ul class="compatabilityList">
-        <li>Web Worker API
-        
-        
+        <li>Web Worker API    
                 <table class="compatabilityTable">
                    <tr>
                         <td>11+</td>
@@ -709,8 +1039,6 @@
                 </table>
         </li>
         <li>Web Sockets
-        
-        
                 <table class="compatabilityTable">
                    <tr>
                         <td>11+</td>
@@ -724,8 +1052,6 @@
                 </table>
         </li>
         <li>WebGL
-        
-        
                 <table class="compatabilityTable">
                    <tr>
                         <td>11+</td>
@@ -739,11 +1065,11 @@
                 </table>
         </li>
        </ul> 
-        
-        
     </div>
     
-    
+	<!-- ----------------------------------------------------------------------------------------------------------------------------
+	    END JESSE
+	-->    
  
     
     

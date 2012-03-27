@@ -404,7 +404,7 @@ div.abs-box > :not(.base) {
      }
  
  
-  .compatabilityTable {
+  .compatabilityTable, .img-rounded {
       
       background: rgba(255, 255, 255, 1);
       padding: 10px;
@@ -456,9 +456,7 @@ div.abs-box > :not(.base) {
      }
 
 
-
-.demoCode {
-    
+.demoCode {    
     width: 160%;
     margin-left: -30%;
     font-size: .6em;
@@ -467,8 +465,6 @@ div.abs-box > :not(.base) {
     box-shadow:5px 5px 15px #031f57;
     border: 5px solid #fff;
     border-radius: 5px;
-    
-    
     }
     
     
@@ -497,5 +493,5 @@ div.abs-box > :not(.base) {
 
 .hLight {
     color: white;
-    font-weight: 600
-    }
+    font-weight: 600;
+
