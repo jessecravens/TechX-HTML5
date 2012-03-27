@@ -672,12 +672,15 @@
 	<!-- ----------------------------------------------------------------------------------------------------------------------------
 	    JESSE
 	-->
+	
+	<!-- ----------------------------------------------------------------------------------------------------------------------------
+	    WEB WORKERS, CANVAS
+	-->
+	
 	<div id="ing3" class="step" data-x="6500" data-y="-850" data-rotate="270" data-scale="3">
 	    <p><b class="positioning">Web Workers,</b></p>
 		<p>and Canvas</p>
 	</div>
-
-
 
 	<div id="demo3Compat" class="step" data-x="7500" data-y="-850" data-rotate="270" data-scale="2">
 	  <ul class="compatabilityList">
@@ -709,6 +712,206 @@
 	    </li>
 	   </ul>        
 	</div>
+
+
+    <div id="workers-what" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+	    <h3>Web Workers API</h3>
+        <p>Web Workers provide a <b>simple</b> means for web content to run scripts in <b>background threads</b>.</p>
+    </div>
+
+    <div id="workers-what2" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+		<p>Once created, a worker can send messages to the spawning task by posting messages to an event handler specified by the creator.</p>
+    </div>
+
+    <div id="workers-why" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+	    <h3>Why Web Workers?</h3>
+		<p>JavaScript codebases <b>continue</b> to grow.</p>
+		<p>As more JavaScript runs, the more applications block ... waiting for code to finish.</p>
+    </div>
+
+    <div id="workers-why2" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+        <p>How do we create and keep our existing applications responsive and high performing?</p>
+    </div>
+
+    <div id="workers-why3" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+		<p>After all, we all <b>have seen</b> this ...</p>
+    </div>
+
+     <div id="unresponsive-ie" class="step prompt" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="img-rounded">
+            <img src="img/workers/ie.gif" width="377" height="165" alt="Ie">
+        </div>
+		<p>default limit: 5M statements</p>
+		<p>settings: registry(HKEY_CURRENT_USERS) MaxScriptStaments</p>
+    </div>
+
+     <div id="unresponsive-chrome" class="step prompt" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="img-rounded">
+            <img src="img/workers/chrome.jpg" width="454" height="232" alt="Chrome">
+        </div>
+		<p>default limit: none - generic crash detection system</p>
+		<p>settings: none</p>
+    </div>
+
+     <div id="unresponsive-safari" class="step prompt" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="img-rounded">
+            <img src="img/workers/safari.png" width="500" height="276" alt="Safari">
+        </div>
+		<p>default limit: 5 seconds</p>
+		<p>settings: Developer Disable Runaway JavaScript Timer</p>
+    </div>
+
+     <div id="unresponsive-firefox" class="step prompt" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="img-rounded">
+            <img src="img/workers/firefox.jpg" width="617" height="213" alt="Firefox">
+        </div>
+		<p>default limit: 10 seconds</p>
+		<p>settings: about:config dom.max_script_run_time</p>
+    </div>
+
+    <div id="workers-single" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+		<h3>So how does this work?</h3>
+		<p>Is it really a <b>Single</b> thread?</p>
+		<!-- <p>JavaScript runs code from an event loop that takes events off a queue of all the events that have occurred in the browser.</p>
+		<p>When the interpreter becomes idle it takes the first event off the queue and runs its handler.</p>
+		<p>As long as it runs quickly the UI remains responsive (50ms).</p> -->
+
+		<img src="img/workers/workers1.png" class="img-rounded" width="427" height="390" alt="Workers1">
+    </div>
+
+    <div id="workers-usescases" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+		<h3>Some of the more common use cases</h3>
+
+	      <ul>
+		      <li><b>Heavy Computations like Array processing</b></li>
+		      <li><b>Artificial Intelligence Libraries</b></li>
+		      <li>Image Processing</li>
+          </ul>
+    </div>
+
+    <div id="workers-overview" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+
+        <h3>Web Worker API</h3>
+        <p>Introduce the API</p>
+
+    </div>
+
+    <div id="workers-types" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+
+        <h3>Types of Workers</h3>
+	      <ul>
+		      <li><b>Dedicated</b></li>
+		      <li>Shared</li>
+		      <li>Inline</li>
+          </ul>
+    </div>
+
+    <div id="workers-communication" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+
+        <h3>Web Worker Communication</h3>
+        <!-- <div class="holder" >
+	      <p>	Web worker runs in the background to your main window. Or in parallel. 
+
+	      			It is data-driven. Send data, does computations, and then sends it back to the main window....where it then can be appended to the DOM. 
+
+	      			Object that gets sent is copied not referenced.</p>
+    	</div> -->
+		<img src="img/workers/workers2.png" class="img-rounded" width="257" height="420" alt="Workers2">
+    </div>
+
+    <div id="workers-highComp" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+
+        <h3>First, We need to Manufacture an <b>Expensive</b> Computation</h3>
+        <!-- <div class="holder" >
+	      <p>How about a closer look:</p>
+    	</div> -->
+    </div>
+
+     <div id="demo3code-1" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=highComp-simple.js"></script>     
+        </div>
+    </div>
+
+    <div id="workers-highComp2" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+        <h3>Well, that's kind of a <b>Bad Idea</b>.</h3>
+    </div>
+
+    <div id="workers-highComp" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+        <h3>Shall we try a <b>Web Worker</b> instead?</h3>
+    </div>
+
+     <div id="demo3code-2" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=spawn.js"></script>     
+        </div>
+    </div>
+
+     <div id="demo3code-3" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=worker.js"></script>     
+        </div>
+    </div>
+
+    <div id="workers-api-pattern" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+         <h3>Ewww... but that <b>code smells</b>, let's refactor it a bit.</h3>
+    </div>
+
+     <div id="demo3code-4" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=computations-library-spawn.js"></script>    
+        </div>
+    </div>
+
+     <div id="demo3code-5" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=computations-library.js"></script>    
+        </div>
+    </div>
+
+    <div id="demo3-canvas-balls" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+
+        <h2>Canvas Bouncing Balls</h2>
+        <div class="holder" >
+	      <a href="http://vivid-stream-4727.herokuapp.com/">TechX 2012 - HTML5 WebWorkers API Demo</a>
+    	</div>
+    </div>
+
+
+    <div id="workers-ai-overview" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+         <h3>So, how does this apply to <b>HTML5 Application</b> development?</h3>
+         <h3>Any need for <b>Artificial Intelligence</b>?</h3>
+    </div>
+
+     <div id="demo3code-6" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=ai-library.js"></script>    
+        </div>
+    </div>
+
+     <div id="demo3code-7" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=ai-library-spawn.js"></script>    
+        </div>
+    </div>
+
+     <div id="demo3code-8" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
+        <div class="demoCode img-rounded">
+            <script src="https://gist.github.com/1910565.js?file=ai-library-init.js"></script>    
+        </div>
+    </div>
+
+    <div id="demo3-ai" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
+
+        <h2>AI Library</h2>
+        <div class="holder" >
+	      <a href="http://vivid-stream-4727.herokuapp.com/artificial.html">TechX 2012 - HTML5 WebWorkers API Demo</a>
+    	</div>
+    </div>
+
+	<!-- ----------------------------------------------------------------------------------------------------------------------------
+	    WEB SOCKETS
+	-->
 
 	<div id="ing4" class="step" data-x="8500" data-y="-850" data-rotate="270" data-scale="3">
 		<p><b class="positioning">Web Sockets,</b></p> 
