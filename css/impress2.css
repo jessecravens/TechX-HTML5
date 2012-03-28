@@ -118,7 +118,7 @@ p.footer { font-size: 0.7em; text-align: right; margin-top: 4em; }
 }
 
 .step:not(.active) {
-  opacity: 0.15;
+  opacity: 1;
 }
 
 /* STEP SPECIFIC STYLES */
