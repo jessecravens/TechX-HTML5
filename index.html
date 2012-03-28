@@ -981,7 +981,7 @@
 	
 	
 	<div id="ing4" class="step" data-x="7500" data-y="-2850" data-rotate="270" data-scale="3">
-        <p>Web Worker API,  <b class="positioning">Web Sockets API </b>, <b class="rotating">GeoLocation, </b> and <b class="scaling"> WebGL</b></p>
+        <p>Web Worker API,  <b class="positioning">Web Sockets </b>, <b class="rotating">GeoLocation, </b><b class="scaling"> WebGL</b></p>
 
 <p>and ... Sencha 2.0 Mobile</p>
 
@@ -1028,6 +1028,19 @@
                         </tr>
                 </table>
         </li>
+        <li>GeoLocation API
+                <table class="compatabilityTable">
+                   <tr>
+                        <td>11+</td>
+                        <td>8+</td>
+                        <td>4+</td>
+                        <td>4+</td>
+                        <td>4+</td>
+                        <td>3+</td>
+                        <td>5+</td>
+                        </tr>
+                </table>
+        </li>
        </ul> 
     </div>
 	
@@ -1057,7 +1070,7 @@
 
 	<div id="websockets-developers" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
 	
-		<h3>Before web sockets, developers had 2 choices:</h3>
+		<h3>Before Web Sockets, developers had 2 choices:</h3>
 		   <ul>
 		      <li>Sequentially poll the server at a regular interval.</li>
 		      <li>Keep the connection open.</li>
@@ -1077,7 +1090,6 @@
 		<h3>Let's look at a few demos.<h3>
     </div>
 
-
      <div id="demo4code-1" class="step" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
         <div class="demoCode img-rounded">
             <script src="https://gist.github.com/1998492.js?file=websockets-client.js"></script>  
@@ -1087,14 +1099,29 @@
     <div id="websockets-robodeck" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
 		<h3>Let's try an Interactive Presentation that demos the following:<h3>
 			<ul>
-			  <li>Connect multiple clients and polyfill support with Socket.io.</li>
+			  <li>Connect multiple clients and <b>polyfill</b> support with Socket.io.</li>
 			  <li>Perform realtime updates to all connected clients</li>
-			  <li>Maintain GeoLocations in all connected clients</li>
+			  <li>Maintain geo locations in all connected clients</li>
 	        </ul>
+	      <ul class="compatabilityList">
+	        <li>Web Sockets
+	                <table class="compatabilityTable">
+	                   <tr>
+	                        <td>11+</td>
+	                        <td>~</td>
+	                        <td>~</td>
+	                        <td>11+</td>
+	                        <td>10+</td>
+	                        <td>~</td>
+	                        <td>~</td>
+	                  </tr>
+	                </table>
+	        </li>
+	       </ul>	
     </div>
 
     <div id="websockets-robodeck-context" class="step" data-x="4500" data-y="3100" data-rotate="180" data-z="-3000" data-rotate-x="-60" data-rotate-y="10" data-scale="3">
-        <img src="img/sockets/gmail.png" width="1046" height="769" alt="Gmail">
+        <img src="img/sockets/robodeck.png" width="1046" height="769" alt="Gmail">
     </div>
  
     <!-- ----------------------------------------------------------------------------------------------------------------------------
