@@ -395,7 +395,7 @@ div.abs-box > :not(.base) {
  
  .split {float: left; width: 48%;}
  
- #tiny p { white-space: nowrap; margin-left: -100px;}
+ #tiny p { white-space: nowrap; }
  
   .emph { color: #fa5903}
  
@@ -524,5 +524,16 @@ div.abs-box > :not(.base) {
     
     }
 
-
-
+.xlogo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 12000;
+    opacity: .3;
+    }
+    
+    
+    
+    
+    
+    
