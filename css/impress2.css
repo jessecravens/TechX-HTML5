@@ -397,7 +397,7 @@ div.abs-box > :not(.base) {
  
  #tiny p { white-space: nowrap; margin-left: -100px;}
  
- #tiny .emph { color: red}
+  .emph { color: red}
  
  .discription {
      font-size: .8em;
