@@ -674,8 +674,7 @@
 	-->
 	
 	<div id="ing3" class="step" data-x="6500" data-y="-1850" data-rotate="270" data-scale="1">
-	    <p><b class="positioning">Web Workers,</b></p>
-		<p>and Canvas</p>
+	    <p><b class="positioning">Web Workers API,</b> and Canvas</p>
 	</div>
 
 	<div id="demo3Compat" class="step" data-x="8000" data-y="1550" data-rotate="270" data-scale="3">
@@ -709,15 +708,14 @@
 	   </ul>        
 	</div>
 
-
     <div id="workers-what" class="step" data-x="7500" data-y="3800" data-rotate="180" data-z="-1000" xdata-rotate-x="-60" data-rotate-y="10" data-scale="5">
 	    <h3>Web Workers API</h3>
         <p>Web Workers provide a <b>simple</b> means for web content to run scripts in <b>background threads</b>.</p>
     </div>
 
-    <div id="workers-what2" class="step" data-x="7500" data-y="5100" data-rotate="180" data-z="-1000"  data-rotate-y="0" data-scale="4">
-		<p>Once created, a worker can send messages to the spawning task by posting messages to an event handler specified by the creator.</p>
-    </div>
+    <!-- <div id="workers-what2" class="step" data-x="7500" data-y="5100" data-rotate="180" data-z="-1000"  data-rotate-y="0" data-scale="4">
+ 		<p>Once created, a worker can send messages to the spawning task by posting messages to an event handler specified by the creator.</p>
+     </div> -->
 
     <div id="workers-why" class="step" data-x="9000" data-y="6500" data-rotate="90" data-z="-500"  data-scale="1">
 	    <h3>Why Web Workers?</h3>
@@ -726,15 +724,15 @@
     </div>
 
     <div id="workers-why2" class="step" data-x="8000" data-y="6500" data-rotate="90" data-scale="2">
-        <h3>How do we create and keep our existing applications responsive and high performing?</h3>
+        <h3>How do we write JavaScript that keeps our applications <b>responsive</b>?</h3>
     </div>
 
     <div id="workers-why3" class="step" data-x="6500" data-y="5800" data-rotate="180" data-scale="1">
-        <h3><b>And</b>, how do we design HTML5 applications frameworks for the future?</h3>
+        <h3><b>Leveraging the Web Worker API</b>, how do we design HTML5 application frameworks of the future?</h3>
     </div>
 
     <div id="workers-why4" class="step" data-x="6500" data-y="6500" data-rotate="180" data-scale="2">
-		<h3><b>And</b>, how do we prevent this?</h3>
+		<h3><b>Ultimately</b>, how do we prevent this?</h3>
     </div>
 
      <!-- <div id="unresponsive-ie" class="step prompt" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
@@ -783,25 +781,18 @@
 		<h3>So, what can create unresponsiveness in the browser?</h3>
 
 	      <ul>
-		      <li><b>Processing large arrays or JSON responses</b></li>
-		      <li><b>Artificial Intelligence Libraries</b></li>
-		      <li>Prefetching and/or caching data for later use</li>
-		      <li>Real-time text formatting</li>
-			  <li>Spell checker</li>
-			  <li>Analyzing video or audio data</li>
-			  <li>Background I/O or polling of webservices</li>
-			  <li>Image filtering in canvas</li>
-			  <li>Updating many rows of a local web database</li>
+		      <li><b>Processing large arrays or JSON responses.</b></li>
+		      <li>Prefetching and/or caching data for later use.</li>
+			  <li>Analyzing video or audio data.</li>
+			  <li>Polling of webservices.</li>
+			  <li>Image filtering in Canvas.</li>
+			  <li>Updating many rows of Local Storage DB.</li>
           </ul>
-    </div>
-
-    <div id="workers-usescases2" class="step" data-x="3000" data-y="6200" data-rotate="90" data-scale="1">
-		<h3>So, these are good candidates for Web Workers.</h3>
     </div>
 
     <div id="workers-communication" class="step" data-x="2500" data-y="6200" data-rotate="0"  data-scale="1">
 
-        <h3>But, How do Web Workers help?</h3>
+        <h3>But, how do Web Workers help?</h3>
         <!-- <div class="holder" >
 	      <p>	Web worker runs in the background to your main window. Or in parallel. 
 
@@ -809,7 +800,7 @@
 
 	      			Object that gets sent is copied not referenced.</p>
     	</div> -->
-		<img src="img/workers/workers2.png" class="img-rounded" width="257" height="420" alt="Workers2">
+		<img src="img/workers/workers2.png" class="img-rounded img-center" width="257" height="420" alt="Workers2">
     </div>
 
     <div id="workers-highComp2" class="step" data-x="2000" data-y="7200" data-rotate="0"  data-scale="2">
@@ -911,7 +902,7 @@
 
          <h3>Artificial Intelligence Demo</h3>
 		   <ul>
-			  <li>Kick off <b>Snapshot</b> Timers</li>
+			  <li>Start <b>Snapshot</b> Timers</li>
 		      <li>At each interval, send <b>Snapshot</b> to Worker (AI Library)</li>
          </ul>
     </div>
@@ -957,11 +948,18 @@
     </div>
 
     <div id="ai-usescases" class="step" data-x="-7500" data-y="6500" data-z="-1000" data-scale="1">
-		<h3>So...this is a silly little game.</h3>
 		<h3>Before Workers this wasn't really possible.</h3>
 		
 		<p>Snapshots of the DOM ------------> background thread.</p>
 		<p>Perform heavy processing, with no impact to the UX.</p>
+    </div>
+
+    <div id="ai-usescases" class="step" data-x="-7500" data-y="6500" data-z="-1000" data-scale="1">
+		<h3>So, this is a silly little game.</h3>
+    </div>
+
+    <div id="ai-usescases" class="step" data-x="-7500" data-y="6500" data-z="-1000" data-scale="1">
+		<h3>Or...is it?</h3>
     </div>
 
     <div id="ai-usescases2" class="step" data-x="-7500" data-y="7500" >
@@ -988,73 +986,61 @@
 	-->
 	
 	
-	<div id="ing4" class="step" data-x="-8500" data-y="7500" data-rotate="90" data-scale="1">
-        <p>Web Worker API,  <b class="positioning">Web Sockets </b>, <b class="rotating">GeoLocation, </b><b class="scaling"> WebGL</b></p>
-
-<p>and ... Sencha 2.0 Mobile</p>
-
+	<div id="ing4" class="step moveme" data-x="-8500" data-y="7500" data-rotate="90" data-scale="5">
+        <p><b class="positioning">Web Sockets API,</b><b class="rotating">WebGL,</b>and Geolocation API</p>
     </div>   
 
     <div id="demo4Compat" class="step" data-x="-9500" data-y="7500" data-rotate="90" data-scale="1">        
       <ul class="compatabilityList">
-        <li>Web Worker API    
-                <table class="compatabilityTable">
-                   <tr>
-                        <td>11+</td>
-                        <td>10+</td>
-                        <td>4+</td>
-                        <td>11+</td>
-                        <td>6+</td>
-                        <td>3+</td>
-                        <td>5+</td>
-                        </tr>
-                </table>
-        </li>
         <li>Web Sockets
                 <table class="compatabilityTable">
                    <tr>
-                        <td>11+</td>
-                        <td>~</td>
-                        <td>~</td>
-                        <td>11+</td>
-                        <td>10+</td>
-                        <td>~</td>
-                        <td>~</td>
-                        </tr>
+	                   <td>~</td> <!-- Opera -->
+	                   <td>10+</td>  <!-- IE -->
+	                   <td>~</td>  <!-- Safari -->
+	                   <td>14+</td>  <!-- Chrome -->
+	                   <td>6+</td> <!-- Firefox -->
+	                   <td>X</td> <!-- Android -->
+	                   <td>4.2+</td> <!-- iOS -->
+                   </tr>
                 </table>
         </li>
         <li>WebGL
                 <table class="compatabilityTable">
                    <tr>
-                        <td>11+</td>
-                        <td>8+</td>
-                        <td>4+</td>
-                        <td>4+</td>
-                        <td>4+</td>
-                        <td>3+</td>
-                        <td>5+</td>
-                        </tr>
+	                   <td>~12+</td> <!-- Opera -->
+	                   <td>10+</td>  <!-- IE -->
+	                   <td>~5.1+</td>  <!-- Safari -->
+	                   <td>~8+</td>  <!-- Chrome -->
+	                   <td>~4+</td> <!-- Firefox -->
+	                   <td>X</td> <!-- Android -->
+	                   <td>X</td> <!-- iOS -->
+                  </tr>
                 </table>
         </li>
         <li>GeoLocation API
                 <table class="compatabilityTable">
                    <tr>
-                        <td>11+</td>
-                        <td>8+</td>
-                        <td>4+</td>
-                        <td>4+</td>
-                        <td>4+</td>
-                        <td>3+</td>
-                        <td>5+</td>
-                        </tr>
+	                   <td>10.6+</td> <!-- Opera -->
+	                   <td>9+</td>  <!-- IE -->
+	                   <td>5+</td>  <!-- Safari -->
+	                   <td>5+</td>  <!-- Chrome -->
+	                   <td>3.5+</td> <!-- Firefox -->
+	                   <td>2.1+</td> <!-- Android -->
+	                   <td>3.2+</td> <!-- iOS -->
+                  </tr>
                 </table>
         </li>
        </ul> 
     </div>
 	
-    <div id="websockets-overview" class="step" data-x="-9500" data-y="6500" data-z="-1000">
+    <div id="websockets-overview" class="step moveme" data-x="-9500" data-y="6500" data-z="-1000" data-scale="15">
 		<h3>What are Web Sockets?</h3>
-		<p>Full-duplex, bi-directional communication over the Web</p>
+		<p>Full-duplex, bi-directional communication over the Web.</p>
+		<p><b class="scaling">But, not HTTP.</b></p>
+		<p>Uses a single Transmission Control Protocol (TCP) socket.</p>
+		
+		
     </div>
 
     <div id="websockets-overview2" class="step" data-x="-9500" data-y="6000" data-z="-1000">
@@ -1062,76 +1048,81 @@
 		<h3>Enabling <b>Real Time UI Updates</b> without a page refresh.</h3>
     </div>
     <div id="websockets-overview3" class="step" data-x="-9500" data-y="5500" data-scale="1">
-		<h3>This Creates Opportunity for <b>Utopian</b> User Experiences</h3>
+			<h3>Only the data itself is sent, <b>without the overhead of HTTP headers and cookies</b>, dramatically reducing bandwidth.</h3>
     </div>
 
     <div id="websockets-overview4" class="step" data-x="-11500" data-y="5000" data-scale="1">
-		<h3>Only the data itself is sent, <b>without the overhead of HTTP headers and cookies</b>, dramatically reducing bandwidth.</h3>
+		<h3>This is a game-changing, <b>disruptive</b> technology.</h3>
     </div>
 
     <div id="websockets-overview5" class="step" data-x="-9500" data-y="4500"  data-scale="1">
-		<h3>So isn't this called <b>Comet</b>? ... and don't these apps exist today.</h3>
-    </div>
-
-	<div id="websockets-gmail" class="step" data-x="-11500" data-y="4000" data-scale="1">
-		<img src="img/sockets/gmail.png" width="1046" height="769" alt="Gmail">
-    </div>
-
-	<div id="websockets-developers" class="step" data-x="-9500" data-y="4000"  data-scale="1">
-	
-		<h3>Before Web Sockets, developers had 2 choices:</h3>
+		<h3>Before Web Sockets, developers had Comet hacks:</h3>
 		   <ul>
-		      <li>Sequentially poll the server at a regular interval.</li>
+			 <li>XHR-long polling</li>
+			 <li>Reverse Ajax</li>
+			 <li>HTTP Streaming</li>
+		     <li>HTTP server push</li>
+          </ul>
+    </div>
+
+	<div id="websockets-developers" class="step" data-x="-11500" data-y="4000" data-scale="1">
+		 <h3>Which provides two options:</h3>
+		  <ul>
+		      <li>Sequentially poll the server.</li>
 		      <li>Keep the connection open.</li>
           </ul>
     </div>
 
+	<div id="websockets-gmail" class="step" data-x="-9500" data-y="4000"  data-scale="1">
+		<h3>Gmail is a popular example.</h3>
+		<img src="img/sockets/gmail.png" width="500" height="366" alt="Gmail">
+    </div>
+
     <div id="websockets-comet" class="step" data-x="-11500" data-y="3500"  data-scale="1">
-		<h3>These techniques work, but it is not ideal.</h3>
-		<h3>And there are major limitations.</h3>
+		<h3>These techniques work.</h3>
+		<h3><b>But,</b> there are limitations.</h3>
     </div>
 
     <div id="websockets-comet2" class="step" data-x="-9500" data-y="3000"  data-scale="1">
-		<h3>After all, HTTP was not designed for <b>Real Time</b> data.</h3>
+		<h3>HTTP was not designed for <b>Real Time</b> data transfer.</h3>
     </div>
 
     <div id="websockets-comet3" class="step" data-x="-11500" data-y="2500" data-scale="1">
-		<h3>Let's look at a few demos.<h3>
-    </div>
-
-     <div id="demo4code-1" class="step" data-x="-9500" data-y="2000" data-scale="1">
-        <div class="demoCode img-rounded">
-            <script src="https://gist.github.com/1998492.js?file=websockets-client.js"></script>  
-        </div>
-    </div>
-
-    <div id="websockets-robodeck" class="step" data-x="-11500" data-y="1500" data-scale="1">
-		<h3>Let's try an Interactive Presentation that demos the following:<h3>
+		<h3><b>So, let's see some demos:</b><h3>
 			<ul>
-			  <li>Connect multiple clients and <b>polyfill</b> support with Socket.io.</li>
-			  <li>Perform realtime updates to all connected clients</li>
-			  <li>Maintain geo locations in all connected clients</li>
-	        </ul>
-	      <ul class="compatabilityList">
-	        <li>Web Sockets
-	                <table class="compatabilityTable">
-	                   <tr>
-	                        <td>11+</td>
-	                        <td>~</td>
-	                        <td>~</td>
-	                        <td>11+</td>
-	                        <td>10+</td>
-	                        <td>~</td>
-	                        <td>~</td>
-	                  </tr>
-	                </table>
-	        </li>
-	       </ul>	
+		      <li>Google Chrome Experiment: Browser Ball</li>
+		      <li>Google Chrome Experiment: Aquarium</li>
+			  <li>Kazzing.com HelloRacer </li>		
+          </ul>
     </div>
 
-    <div id="websockets-robodeck-context" class="step" data-x="-9500" data-y="1000"  data-scale="1">
-        <img src="img/sockets/robodeck.png" width="1046" height="769" alt="Gmail">
+     <!-- <div id="demo4code-1" class="step" data-x="-9500" data-y="2000" data-scale="1">
+         <div class="demoCode img-rounded">
+             <script src="https://gist.github.com/1998492.js?file=websockets-client.js"></script>  
+         </div>
+     </div> -->
+
+    <div id="websockets-robodeck1" class="step" data-x="-9500" data-y="2000" data-scale="1">
+		<h3>Now, Let's try an <b>Interactive</b> Demo.<h3>
+		<p>robodeck.herokuapp.com</p>
+		
+		<!-- <ol>
+		  <li>Connect to http://robodeck.herokuapp.com</li>
+		  <li>Client will <b>Polyfill</b> support with fallbacks to Comet.</li>
+		  <li>Server will publish real time updates to all connected clients.</li>
+		</ol> -->	
     </div>
+
+    <!-- <div id="websockets-robodeck2" class="step" data-x="-11500" data-y="1500" data-scale="1">
+		<h3><b>robodeck.herokuapp.com</b></h3>
+		
+		
+			<ul>
+				<li>Number of Connected Users</li>
+				<li>GeoLocations</li>
+				<li>Slide transitions</li>
+	        </ul>
+    </div> -->
  
     <!-- ----------------------------------------------------------------------------------------------------------------------------
 	    END SOCKETS
