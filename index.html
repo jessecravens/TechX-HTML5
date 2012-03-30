@@ -723,6 +723,16 @@
 		<p>As more JavaScript runs, the more applications block ... waiting for code to finish.</p>
     </div>
 
+    <div id="workers-why4" class="step" data-x="6500" data-y="6500" data-rotate="180" data-scale="2">
+		<h3><b>Ultimately</b>, we end up with this.</h3>
+    </div>
+
+     <div id="unresponsive-firefox" class="step prompt" data-x="6500" data-y="7200" data-scale="2">
+        <div class="img-rounded shrink">
+            <img src="img/workers/firefox.jpg" width="617" height="213" alt="Firefox">
+        </div>
+    </div>
+
     <div id="workers-why2" class="step" data-x="8000" data-y="6500" data-rotate="90" data-scale="2">
         <h3>How do we write JavaScript that keeps our applications <b>responsive</b>?</h3>
     </div>
@@ -731,9 +741,9 @@
         <h3><b>Leveraging the Web Worker API</b>, how do we design HTML5 application frameworks of the future?</h3>
     </div>
 
-    <div id="workers-why4" class="step" data-x="6500" data-y="6500" data-rotate="180" data-scale="2">
-		<h3><b>Ultimately</b>, how do we prevent this?</h3>
-    </div>
+
+
+
 
      <!-- <div id="unresponsive-ie" class="step prompt" data-x="-1500" data-y="6500" data-z="-3800" data-rotate="270" data-scale="1">
         <div class="img-rounded">
@@ -759,13 +769,7 @@
 		<p>settings: Developer Disable Runaway JavaScript Timer</p>
     </div> -->
 
-     <div id="unresponsive-firefox" class="step prompt" data-x="6500" data-y="7200" data-scale="2">
-        <div class="img-rounded shrink">
-            <img src="img/workers/firefox.jpg" width="617" height="213" alt="Firefox">
-        </div>
-		<!-- <p>default limit: 10 seconds</p>
-		<p>settings: about:config dom.max_script_run_time</p> -->
-    </div>
+
 
     <div id="workers-single" class="step" data-x="4500" data-y="7200" data-rotate="90" data-scale="3">
 		<h3>How are events handled in the browser?</h3>
@@ -845,7 +849,8 @@
     </div>
 
     <div id="workers-api-pattern" class="step" data-x="-3000" data-y="7000" data-rotate="90"   data-scale="2">
-         <h3>Ewww... but that <b>code smells</b>, let's refactor it a bit.</h3>
+         <h3>Ewww... but that <b>code smells*</b>, let's refactor it a bit.</h3>
+<p>*any symptom in the source code of a program that possibly indicates a deeper problem.</p>
     </div>
 
      <div id="demo3code-4" class="step" data-x="-4500" data-y="6500" data-rotate="0" data-scale="1">
@@ -880,7 +885,7 @@
          </ul>
     </div>
 
-     <div id="demo3code-7" class="step" data-x="-4500" data-y="3000"  data-scale="1">
+     <!-- <div id="demo3code-7" class="step" data-x="-4500" data-y="3000"  data-scale="1">
         <div class="demoCode img-rounded">
             <script src="https://gist.github.com/1910565.js?file=ai-library-spawn.js"></script>    
         </div>
@@ -891,7 +896,7 @@
         
             <script src="https://gist.github.com/1910565.js?file=ai-library-init.js"></script>    
         </div>
-    </div>
+    </div> -->
 
     <div id="demo3-ai2" class="step" data-x="-3500" data-y="1000" data-scale="4">
          <h3>Let's Run It.</h3>
@@ -902,23 +907,23 @@
 
          <h3>Artificial Intelligence Demo</h3>
 		   <ul>
-			  <li>Start <b>Snapshot</b> Timers</li>
-		      <li>At each interval, send <b>Snapshot</b> to Worker (AI Library)</li>
+			  <li>Start <b>Snapshot</b> Timers.</li>
+		      <li>At each interval, send <b>Snapshot</b> to Worker (AI Library).</li>
          </ul>
     </div>
 
-     <div id="demo3code-9" class="step" data-x="-7500" data-y="2000" data-scale="1">
+     <!-- <div id="demo3code-9" class="step" data-x="-7500" data-y="2000" data-scale="1">
         <div class="demoCode img-rounded">
             <script src="https://gist.github.com/1910565.js?file=ai-library-timers.js"></script>    
         </div>
-    </div>
+    </div> -->
 
     <div id="demo3-ai4" class="step" data-x="-7500" data-y="3000" data-scale="1">
 
          <h3>Artificial Intelligence Demo</h3>
 		   <ul>
-			  <li>Do <b>Heavy Processing</b> in Worker (AI Library)</li>
-			  <li>Pass Back <b>Updates</b> to Main Thread</li>
+			  <li>Do <b>Heavy Processing</b> in Worker (AI Library).</li>
+			  <li>Pass Back <b>Updates</b> to Main Thread.</li>
          </ul>
     </div>
 
@@ -933,15 +938,18 @@
 
          <h3>Artificial Intelligence Demo</h3>
 		   <ul>
-			  <li>Make Updates to DOM Elements</li>
+			  <li>Make Updates to DOM Elements.</li>
+				<li><img src="img/workers/glyphicons_003_user.png" width="23" height="22" alt="Glyphicons 003 User"> Erradicate Slowest Moving Icon.</li>
+				<li><img src="img/workers/glyphicons_070_umbrella.png" width="26" height="28" alt="Glyphicons 070 Umbrella"> Turn Lowest Icon into a Umbrella.</li>
+				<li><img src="img/workers/glyphicons_092_tint.png" width="23" height="26" alt="Glyphicons 092 Tint"> Turn Highest Icon into a Raindrop.</li>
          </ul>
     </div>
 
-     <div id="demo3code-11" class="step" data-x="-8500" data-y="5500" data-rotate="90" data-scale="1">
+     <!-- <div id="demo3code-11" class="step" data-x="-8500" data-y="5500" data-rotate="90" data-scale="1">
         <div class="demoCode img-rounded">
             <script src="https://gist.github.com/1910565.js?file=ai-library-spawn.js"></script>    
         </div>
-    </div>
+    </div> -->
 
     <div id="demo3-ai6" class="step" data-x="-7500" data-y="5500"  data-rotate="90" data-scale="1">
          <h3>Let's Run It.</h3>
@@ -951,7 +959,7 @@
 		<h3>Before Workers this wasn't really possible.</h3>
 		
 		<p>Snapshots of the DOM ------------> background thread.</p>
-		<p>Perform heavy processing, with no impact to the UX.</p>
+		<p>Perform heavy processing, with <b>no impact to the UX</b>.</p>
     </div>
 
     <div id="ai-usescases22" class="step" data-x="-6500" data-y="6500" data-z="-1000" data-scale="1">
@@ -1039,52 +1047,48 @@
 		<p>Full-duplex, bi-directional communication over the Web.</p>
 		<p><b class="scaling">But, not HTTP.</b></p>
 		<p>Uses a single Transmission Control Protocol (TCP) socket.</p>
-		
-		
     </div>
 
-    <div id="websockets-overview2" class="step" data-x="-9500" data-y="6000" data-z="-1000">
+    <div id="websockets-overview4" class="step" data-x="-9500" data-y="3000"  data-scale="1">
+		<h3>HTTP was not designed for <b>Real Time</b> data transfer.</h3>
+    </div>
+
+    <!-- <div id="websockets-overview2" class="step" data-x="-9500" data-y="6000" data-z="-1000">
 	<h3>Both the <b>server</b> and <b>client</b> can send data at any time, or <b>even</b> at the same time.</h3>
-		<h3>Enabling <b>Real Time UI Updates</b> without a page refresh.</h3>
-    </div>
+		<h3>This enables <b>Real Time UI Updates</b> without a page refresh.</h3>
+    </div> -->
+
     <div id="websockets-overview3" class="step" data-x="-9500" data-y="5500" data-scale="1">
-			<h3>Only the data itself is sent, <b>without the overhead of HTTP headers and cookies</b>, dramatically reducing bandwidth.</h3>
+			<h3>With Sockets, only the data itself is sent, <b>without the overhead</b> of HTTP headers and cookies.</h3>
     </div>
 
-    <div id="websockets-overview4" class="step" data-x="-11500" data-y="5000" data-scale="1">
+    <div id="websockets-overview5" class="step" data-x="-11500" data-y="5000" data-scale="1">
 		<h3>This is a game-changing, <b>disruptive</b> technology.</h3>
     </div>
 
-    <div id="websockets-overview5" class="step" data-x="-9500" data-y="4500"  data-scale="1">
+    <div id="websockets-overview6" class="step" data-x="-9500" data-y="4500"  data-scale="1">
 		<h3>Before Web Sockets, developers had Comet hacks:</h3>
 		   <ul>
-			 <li>XHR-long polling</li>
+			 <li>XHR-long polling - sequentially poll the server.</li>
 			 <li>Reverse Ajax</li>
-			 <li>HTTP Streaming</li>
+			 <li>HTTP Streaming - keep the connection open.</li>
 		     <li>HTTP server push</li>
           </ul>
     </div>
 
 	<div id="websockets-developers" class="step" data-x="-11500" data-y="4000" data-scale="1">
-		 <h3>Which provides two options:</h3>
-		  <ul>
-		      <li>Sequentially poll the server.</li>
-		      <li>Keep the connection open.</li>
-          </ul>
+		<h3>These are now <b>Polyfills</b> for browsers without web socket support.</h3>
     </div>
 
-	<div id="websockets-gmail" class="step" data-x="-9500" data-y="4000"  data-scale="1">
+	<!-- <div id="websockets-gmail" class="step" data-x="-9500" data-y="4000"  data-scale="1">
 		<h3>Gmail is a popular example.</h3>
 		<img src="img/sockets/gmail.png" width="500" height="366" alt="Gmail">
-    </div>
+    </div> -->
 
-    <div id="websockets-comet" class="step" data-x="-11500" data-y="3500"  data-scale="1">
-		<h3>These techniques work.</h3>
-		<h3><b>But,</b> there are limitations.</h3>
-    </div>
-
-    <div id="websockets-comet2" class="step" data-x="-9500" data-y="3000"  data-scale="1">
-		<h3>HTTP was not designed for <b>Real Time</b> data transfer.</h3>
+    <div id="websockets-webgl" class="step" data-x="-11500" data-y="3500"  data-scale="1">
+		<h3>What is WebGL?</h3>
+		<p>WebGL (Web Graphics Library) is a JavaScript API for rendering interactive 3D graphics</p>
+		<p><b>Without the use of plug-ins.</b></p>
     </div>
 
     <div id="websockets-comet3" class="step" data-x="-11500" data-y="2500" data-scale="1">
